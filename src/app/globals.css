@@ -10,6 +10,11 @@
     object-fit: cover;
 }
 
+.get-inTouch{
+    background-image: url(./components/assets/images/pexels-fr3nks-305568\ 1.png);
+    background-size: cover;
+}
+
 @media (min-width: 768px) {
     .hero{
         background-position: center;
