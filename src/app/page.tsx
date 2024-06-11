@@ -37,7 +37,7 @@ export default function Home() {
       </section>
 
       <section className='bg-[#fff] relative'>
-        <div className='md:max-w-[85%] p-4'>
+        <div className='md:max-w-[85%] m-auto p-4'>
           <header className='bg-[#fff] w-[95%] lg:w-[60%] m-auto left-[11px] lg:left-[20%] grid grid-cols-2 md:grid-cols-4 gap-3 shadow-md absolute top-[-50px] py-8 px-[2rem] rounded-full text-[#000]'>
             <div className="location p-2 rounded-full bg-[#ddd]">
               <input type="text" placeholder='Location' className='bg-transparent text-[14px]' />
@@ -53,25 +53,72 @@ export default function Home() {
             </div>
           </header>
 
-          <div className="step">
-            <header>
-              <h2>
+          <div className="step mt-[10rem] mb-[3rem] md:mb-[7rem]">
+            <header className='my-[4rem]'>
+              <h2 className='text-[#449DD1] text-[20px] md:text-[30px] md:w-[40%] m-auto font-extrabold text-center'>
                 Take the first step towards a pain-free life.
               </h2>
             </header>
 
-            <div className='steps'>
-              <div className="location">
-                <div className="location-icon">
-                <Icon icon="material-symbols-light:location-on-outline"></Icon>
+            <div className='steps grid gap-7 md:grid-cols-3'>
+              <div className="location text-center px-[2.2rem]">
+                <div className="location-icon mb-[2rem]">
+                <Icon icon="humbleicons:location" className='text-[80px] m-auto w-full'></Icon>
                 </div>
-                <p>
+                <p className='font-bold text-[18px]'>
                   Choose a location that is convenient
                   for you, ensure you attend consultations and follow-up
                   appointments
                 </p>
               </div>
+              <div className="scheduling text-center px-[2.2rem]">
+                <div className="location-icon mb-[2rem]">
+                <Icon icon="arcticons:calendar-simple-19" className='text-[80px] m-auto w-full'></Icon>
+                </div>
+                <p className='font-bold text-[18px]'>
+                  Scheduling your procedure at a time
+                  that suits you eunsures you can plan
+                  your recovery period effectively
+                </p>
+              </div>
+              <div className="finding text-center px-[2.2rem]">
+                <div className="location-icon mb-[2rem]">
+                <Icon icon="uil:stethoscope-alt" className='text-[80px] m-auto w-full'></Icon>
+                </div>
+                <p className='font-bold text-[18px]'>
+                  Finding the right specialist is
+                  crucial for successful hernia treatment
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="risk bg-[#f4f4f4]">
+        <div className='md:max-w-[85%] m-auto p-4'>
+          <header className='py-[3rem]'>
+            <h2 className='text-[#449DD1] text-[20px] md:text-[30px] font-extrabold text-center'>
+              How Risky Is A Hernia
+            </h2>
+          </header>
+
+          <div className="relative hernia-list bg-[#fff] p-8 ps-[4rem] rounded-lg">
+            <div className="absolute left-0 bg-[#449DD1] w-[40px] h-[30px]">
+
+            </div>
+            <ul className='grid gap-3 text-[#0000009b]'>
+              <li className='text-[20px] font-extrabold'>Ingunial hernia</li>
+              <li className='text-[20px] font-extrabold'>Incisional hernia</li>
+              <li className='text-[20px] font-extrabold'>Hiatal hernia</li>
+              <li className='text-[20px] font-extrabold'>Femoral hernia</li>
+              <li className='text-[20px] font-extrabold'>Ventral hernia</li>
+              <li className='text-[20px] font-extrabold'>Umblical hernia</li>
+              <li className='text-[20px] font-extrabold'>Recurrent hernia</li>
+              <li className='text-[20px] font-extrabold'>Diaphragmatic hernia</li>
+              <li className='text-[20px] font-extrabold'>Spigelian hernia</li>
+              <li className='text-[20px] font-extrabold'>Flank hernia</li>
+            </ul>
           </div>
         </div>
       </section>

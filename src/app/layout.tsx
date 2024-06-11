@@ -4,7 +4,7 @@ import "./globals.css";
 import NavBar from "./components/Nav/NavBar";
 
 const inter = Montserrat({ subsets: ["latin"],
-  weight: ["100","300","400","500","600"]
+  weight: ["100","300","400","500","600","700","800","900"]
  });
 
 export const metadata: Metadata = {
