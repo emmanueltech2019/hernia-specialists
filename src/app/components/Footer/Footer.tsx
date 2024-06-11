@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <>
     <div
-      className=" text-white p-8 relative bg-cover bg-center center h-[250px]"
+      className=" text-white p-8 relative bg-cover bg-center center h-fit"
       style={{ backgroundImage: 'url(https://res.cloudinary.com/wise-solution-inc/image/upload/v1718121485/footer-design_gexz65.png)' }}
     >
       <div className=" bg-opacity-75 p-8">
