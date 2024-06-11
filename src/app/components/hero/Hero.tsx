@@ -1,7 +1,12 @@
 import React from 'react'
 
-function Hero({title, description}) {
-  return (
+interface HeroProps {
+    title: string;
+    description: string;
+}
+
+const Hero: React.FC<HeroProps> = ({ title, description }) => {
+    return (
     <div>
               <section className="hero bg-[#00000058] bg-blend-overlay">
         <div className="backdrop-blur-sm">
