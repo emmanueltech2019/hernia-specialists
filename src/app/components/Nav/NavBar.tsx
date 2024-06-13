@@ -33,7 +33,7 @@ function NavBar() {
                     </div>
                 </header>
 
-                <nav className={!toggle ? ' absolute w-[400px] m-auto flex flex-col justify-center items-center text-center shadow-md bg-[#ffff] shadow-[#08080847] p-4 rounded-3xl transition-all ease-in-out duration-500 scale-[20%] top-[-300px]' : 'absolute w-[345px] m-auto md:m-0 flex flex-col justify-center items-center text-center shadow-md bg-[#ffff] shadow-[#08080847] p-4 rounded-3xl transition-all ease-in-out duration-500 scale-100 top-20'}>
+                <nav className={!toggle ? ' absolute w-[400px] m-auto flex flex-col justify-center items-center text-center shadow-md bg-[#ffff] shadow-[#08080847] p-4 rounded-3xl transition-all ease-in-out duration-500 scale-[20%] top-[-300px] md:right-40' : 'absolute w-[345px] m-auto md:m-0 flex flex-col justify-center items-center text-center shadow-md bg-[#ffff] shadow-[#08080847] p-4 rounded-3xl transition-all ease-in-out duration-500 scale-100 top-20 md:right-40'}>
                     <div className="user py-2">
                     <Icon icon="lucide:user-round" className='text-[#2c2c2ca1] font-bold text-[52px] bg-[#d5d4d4] rounded-full p-2 m-auto mb-3'></Icon>
 
