@@ -44,13 +44,13 @@ export default function Home() {
         <div className='md:max-w-[85%] m-auto p-4'>
           <header className='bg-[#fff] w-[95%] lg:w-[60%] m-auto left-[11px] lg:left-[20%] grid grid-cols-2 md:grid-cols-4 gap-3 shadow-md absolute top-[-50px] py-8 px-[2rem] rounded-full text-[#000]'>
             <div className="location p-2 rounded-full bg-[#ddd]">
-              <input type="text" placeholder='Location' className='bg-transparent text-[14px]' />
+              <input type="text" placeholder='Location' className='bg-transparent text-[14px] outline-none border-0' />
             </div>
             <div className="date p-2 rounded-full bg-[#ddd]">
-              <input type="date" placeholder='Date' className='bg-transparent text-[14px]' />
+              <input type="date" placeholder='Date' className='bg-transparent text-[14px] outline-none border-0' />
             </div>
             <div className="specialty p-2 rounded-full bg-[#ddd]">
-              <input type="text" placeholder='Specialty' className='bg-transparent text-[14px]' />
+              <input type="text" placeholder='Specialty' className='bg-transparent text-[14px] outline-none border-0' />
             </div>
             <div className="search p-2 rounded-full bg-[#ddd] text-center text-[#449DD1]">
               <button>Search</button>
