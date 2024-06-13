@@ -35,6 +35,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
 
       <section className='bg-[#fff] relative'>
         <div className='md:max-w-[85%] p-4'>
