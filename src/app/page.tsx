@@ -165,6 +165,9 @@ export default function Home() {
               <div className='col-span-2 border p-3 rounded-xl'>
                 <select name="reason-for-contact" id="reason" title="res" className='outline-none border-none'>
                   <option value="reason1" selected>Reason for contact</option>
+                  <option value="surgery-appointment">Surgery Appointment</option>
+                  <option value="in-house-appointment">In-house Appointment</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
               <div className="submit col-span-2 border p-3 rounded-xl text-center text-[#fff] bg-[#131657]">
