@@ -30,7 +30,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, price, description, fe
       <button className={`w-full py-2 px-4 rounded mt-20 ${highlighted ? 'bg-black text-white' : 'bg-black text-white hover:bg-gray-700'}`}>
         Lorem ipsum
       </button>
-    </div>
+    </div> 
   );
 };
 
