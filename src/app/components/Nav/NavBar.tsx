@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { Icon } from '@iconify/react';
 import logoImg from './img/logo 1.png'
+import Link from 'next/link';
 
 function NavBar() {
     const [toggle, setToggle] = useState(false)
@@ -42,10 +43,12 @@ function NavBar() {
                     </div>
                     </div>
                     <ul className='text-center flex flex-col my-3 gap-3 w-[70%]'>
-                        <li className='rounded-full p-2 hover:border border-[#000000]'>About Us</li>
-                        <li className='rounded-full p-2 hover:border border-[#000000]'>FAQ</li>
-                        <li className='rounded-full p-2 hover:border border-[#000000]'>Contact Us</li>
-                        <li className='rounded-full p-2 border border-[#000000]'>Log out</li>
+                        <Link href="/about"><li className='rounded-full p-2 hover:border border-[#000000] cursor-pointer'>About Us</li></Link>
+                        <Link href="/faq">
+                        <li className='rounded-full p-2 hover:border border-[#000000] cursor-pointer'>FAQ</li>
+                        </Link>
+                        <li className='rounded-full p-2 hover:border border-[#000000] cursor-pointer'>Contact Us</li>
+                        <li className='rounded-full p-2 border border-[#000000] cursor-pointer'>Log out</li>
                     </ul>
                 </nav>
             </div>
