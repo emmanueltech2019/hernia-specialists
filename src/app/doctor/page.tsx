@@ -153,59 +153,59 @@ const page: React.FC = () => {
             <h1 className='text-[#449DD1] text-[20px] md:text-[30px] font-extrabold text-center'>Specialties</h1>
           </header>
 
-          <div className="grid grid-cols-2 sm:grid-col-1 md:grid-cols-4 gap-3 my-4 justify-center items-center m-auto w-full">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-3 my-4 justify-center items-center m-auto w-full">
             <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="w-[170px]" alt="alt" />
-              <div className="absolute h-full  sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
+              <Image src={specialtyImg} className="" alt="alt" />
+              <div className="absolute h-full w-full sm:ms-9 lg:ms-20  sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
               <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
               <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
               </div>
             </div>
             <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="w-[170px]" alt="alt" />
-              <div className="absolute h-full  sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
+              <Image src={specialtyImg} className="" alt="alt" />
+              <div className="absolute h-full w-full sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
               <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
               <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
               </div>
             </div>
             <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="w-[170px]" alt="alt" />
-              <div className="absolute h-full  sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
+              <Image src={specialtyImg} className="" alt="alt" />
+              <div className="absolute h-full w-full sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
               <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
               <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
               </div>
             </div>
             <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="w-[170px]" alt="alt" />
-              <div className="absolute h-full  sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
+              <Image src={specialtyImg} className="" alt="alt" />
+              <div className="absolute h-full w- sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
               <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
               <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
               </div>
             </div>
             <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="w-[170px]" alt="alt" />
-              <div className="absolute h-full  sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
+              <Image src={specialtyImg} className="" alt="alt" />
+              <div className="absolute h-full w-full sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
               <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
               <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
               </div>
             </div>
             <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="w-[170px]" alt="alt" />
-              <div className="absolute h-full  sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
+              <Image src={specialtyImg} className="" alt="alt" />
+              <div className="absolute h-full w-full sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
               <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
               <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
               </div>
             </div>
             <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="w-[170px]" alt="alt" />
-              <div className="absolute h-full  sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
+              <Image src={specialtyImg} className="" alt="alt" />
+              <div className="absolute h-full w-full sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
               <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
               <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
               </div>
             </div>
             <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="w-[170px]" alt="alt" />
-              <div className="absolute h-full  sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
+              <Image src={specialtyImg} className="" alt="alt" />
+              <div className="absolute h-full w-full sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
               <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
               <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
               </div>
