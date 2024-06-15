@@ -16,7 +16,7 @@ export default function Home() {
         <div className="backdrop-blur-sm">
           <div className='md:max-w-[85%] m-auto pt-[7rem] p-4 pb-[6rem] min-h-[100vh]'>
             <header className='mt-[6.5rem]'>
-              <h1 className='md:w-[85%] text-[37px] md:text-[60px] font-bold text-[#fff] leading-10 md:leading-[16mm]'>
+              <h1 className='md:w-[85%] text-[37px] md:text-[60px] font-bold text-[#fff] leading-10 md:leading-[18mm]'>
                 Find your <br className='md:hidden' />
                 Hernia<br className='hidden md:block' />Specialists in Austin, TX.
               </h1>
@@ -236,7 +236,7 @@ export default function Home() {
       <section >
         <div className='md:max-w-[85%] m-auto p-4 py-[6rem]'>
           <header>
-            <h2 className='text-[#449DD1] text-[20px] md:text-[30px] font-extrabold text-center w-[50%] md:w-[30%] m-auto my-[2rem]'>
+            <h2 className='text-[#449DD1] text-[20px] md:text-[30px] font-extrabold text-center w-[60%] md:w-[30%] m-auto my-[2rem]'>
               BRONX HERNIA SPECIALISTS
             </h2>
           </header>
