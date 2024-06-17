@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useRef, useEffect } from "react";
 import Hero from "../components/hero/Hero";
 import Image from "next/image";
 import docImg from "../components/assets/images/image 5.png"
@@ -8,9 +9,21 @@ import hiatalImg from '../components/assets/images/image 4.png'
 import umblicalImg from '../components/assets/images/Bronx Hernia Specialists _ Hernia Surgery - Opera 5_15_2023 4_38_28 PM 1 (1).png'
 import specialtyImg from '../components/assets/images/Does Every Umbilical Hernia Corrects Itself_ Know here https___goo_gl_jGw3rE 1.png'
 import data from "../data";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/bundle'
+import gallbladderImg from './img/image copy 6.png'
+import daVinciImg from './img/image copy 5.png'
+import breastImg from './img/image copy 4.png'
+import smallImg from './img/image copy 3.png'
+import mastectomyImg from './img/image copy 2.png'
+import colonImg from './img/image copy.png'
+import endoscopyImg from './img/image.png'
 
 
-const page: React.FC = () => {
+function Page() {
+
   return (
     <div>
       <Hero title={''} description={''} />
@@ -51,10 +64,10 @@ const page: React.FC = () => {
           <div className="info md:flex gap-8 justify-between md:mt-[7rem] md:w-[80%] m-auto">
             <p className="text-[15px] font-[500] leading-[8mm] md:w-[80%]">
               Vineet Choudhry was born near Chicago and has lived in various places growing up such as Kansas City and San Francisco. However, he moved to Ft. Worth, Texas in 1984 and now considers himself a native Texan.
-              
+
             </p>
             <p className="text-[15px] font-[500] leading-[8mm] md:w-[100%]">
-            He graduated with a Bachelor of Science in Biochemistry from the University of Texas at Austin in 1997. He then received his medical degree at Texas A&M Health Science Center College of Medicine. After successfully completing his specialty training residency in General Surgery at the University of Kansas School of Medicine in Wichita, Kansas, he returned to Austin in 2008 to open his medical practice.
+              He graduated with a Bachelor of Science in Biochemistry from the University of Texas at Austin in 1997. He then received his medical degree at Texas A&M Health Science Center College of Medicine. After successfully completing his specialty training residency in General Surgery at the University of Kansas School of Medicine in Wichita, Kansas, he returned to Austin in 2008 to open his medical practice.
             </p>
           </div>
         </div>
@@ -85,7 +98,7 @@ const page: React.FC = () => {
                   <option value="other">Other</option>
                 </select>
               </div>
-              <div className="submit col-span-2 border p-3 rounded-xl text-center text-[#fff] bg-[#131657]">
+              <div className="submit col-span-2 border p-3 rounded-full text-center text-[#fff] bg-[#449DD1]">
                 <button>SUBMIT</button>
               </div>
             </form>
@@ -155,67 +168,146 @@ const page: React.FC = () => {
           </header>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-3 my-4 justify-center items-center m-auto w-full">
-            <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="" alt="alt" />
-              <div className="absolute h-full w-full sm:ms-9 lg:ms-20  sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
-              <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
-              <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
+            <div className="relative overflow-hidden rounded-lg">
+              <Image src={specialtyImg} className="h-[170px] rounded-lg" alt="alt" />
+              <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[5%] ">
+                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+                <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
               </div>
             </div>
-            <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="" alt="alt" />
-              <div className="absolute h-full w-full sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
-              <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
-              <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
+            <div className="relative overflow-hidden rounded-lg">
+              <Image src={gallbladderImg} className="h-[170px] rounded-lg" alt="alt" />
+              <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
+                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+                <h2 className="text-[20px] text-[#fff] font-[500]">Gallbladder</h2>
               </div>
             </div>
-            <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="" alt="alt" />
-              <div className="absolute h-full w-full sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
-              <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
-              <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
+            <div className="relative overflow-hidden rounded-lg">
+              <Image src={daVinciImg} className="h-[170px] rounded-lg" alt="alt" />
+              <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
+                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+                <h2 className="text-[20px] text-[#fff] text-center font-[500]">Da Vinci Robotic Surgery</h2>
               </div>
             </div>
-            <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="" alt="alt" />
-              <div className="absolute h-full w- sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
-              <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
-              <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
+            <div className="relative overflow-hidden rounded-lg">
+              <Image src={breastImg} className="h-[170px] rounded-lg" alt="alt" />
+              <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
+                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+                <h2 className="text-[20px] text-[#fff] font-[500]">Breast Cancer</h2>
               </div>
             </div>
-            <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="" alt="alt" />
-              <div className="absolute h-full w-full sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
-              <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
-              <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
+            <div className="relative overflow-hidden rounded-lg">
+              <Image src={smallImg} className="h-[170px] rounded-lg" alt="alt" />
+              <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
+                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+                <h2 className="text-[20px] text-[#fff] font-[500]">Small intestine</h2>
               </div>
             </div>
-            <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="" alt="alt" />
-              <div className="absolute h-full w-full sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
-              <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
-              <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
+            <div className="relative overflow-hidden rounded-lg">
+              <Image src={mastectomyImg} className="h-[170px] rounded-lg" alt="alt" />
+              <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
+                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+                <h2 className="text-[20px] text-[#fff] font-[500]">Mastecomy</h2>
               </div>
             </div>
-            <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="" alt="alt" />
-              <div className="absolute h-full w-full sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
-              <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
-              <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
+            <div className="relative overflow-hidden rounded-lg">
+              <Image src={colonImg} className="h-[170px] rounded-lg" alt="alt" />
+              <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
+                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+                <h2 className="text-[20px] text-[#fff] font-[500]">Colon Surgery</h2>
               </div>
             </div>
-            <div className="relative overflow-hidden">
-              <Image src={specialtyImg} className="" alt="alt" />
-              <div className="absolute h-full w-full sm:ms-9 lg:ms-20 sm:w-[50%] flex flex-col items-center justify-center -bottom-[5%] ">
-              <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
-              <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
+            <div className="relative overflow-hidden rounded-lg">
+              <Image src={endoscopyImg} className="h-[170px] rounded-lg" alt="alt" />
+              <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
+                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+                <h2 className="text-[20px] text-[#fff] font-[500]">Endoscopy</h2>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="reviews">
+        <div className="md:max-w-[85%] m-auto p-4 py-[2rem]">
+
+          <Swiper className="px-[2rem]"
+            modules={[Pagination, A11y]}
+            spaceBetween={20}
+            // slidesPerView={3}
+            // navigation
+            loop={true}
+            pagination={{ clickable: true }}
+            // scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+            }}
+          >
+            <SwiperSlide className="p-3 md:p-[4rem] shadow-lg rounded-xl my-[3rem]">
+              <div className=" rating flex items-center text-[18px]">
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+              </div>
+              <div className="review text-[14px] md:text-[18px] ">
+                <h2 className="font-bold my-[.5rem]">Steven Weitzman</h2>
+                <p>
+                  &quot;I was very happy with the hernia procedure that Dr Choudry performed. He explained everything to me and spent a lot of time going over the surgery. No pain no side affects and a fast recovery. I highly recommend him. &quot;
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="p-3 md:p-[4rem] shadow-lg rounded-xl my-[3rem]">
+              <div className=" rating flex items-center text-[18px]">
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+              </div>
+              <div className="review text-[14px] md:text-[18px]">
+                <h2 className="font-bold my-[.5rem]">Steven Weitzman</h2>
+                <p>
+                  &quot;I was very happy with the hernia procedure that Dr Choudry performed. He explained everything to me and spent a lot of time going over the surgery. No pain no side affects and a fast recovery. I highly recommend him. &quot;
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="p-3 md:p-[4rem] shadow-lg rounded-xl my-[3rem]">
+              <div className=" rating flex items-center text-[18px]">
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+                <Icon icon="material-symbols:star" className="text-[#eae249]"></Icon>
+              </div>
+              <div className="review text-[14px] md:text-[18px]">
+                <h2 className="font-bold my-[.5rem]">Steven Weitzman</h2>
+                <p>
+                  &quot;I was very happy with the hernia procedure that Dr Choudry performed. He explained everything to me and spent a lot of time going over the surgery. No pain no side affects and a fast recovery. I highly recommend him. &quot;
+                </p>
+              </div>
+            </SwiperSlide>
+
+          </Swiper>
         </div>
       </section>
     </div>
   );
 }
 
-export default page;
+export default Page;

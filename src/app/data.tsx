@@ -6,7 +6,7 @@ interface Data {
 const data:Data ={
     brand:"XHS",
     city:"Bronx",
-    state:"NY"
+    state:"NY",
 }
 
 export default data

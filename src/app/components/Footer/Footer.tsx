@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="text-center md:text-center">
-              <h2 className="text-2xl font-bold mb-4">Have Questions?</h2>
+              <h2 className="text-2xl font-bold mb-4 text-[#449DD1]">Have Questions?</h2>
               <p className="mb-6">
                 Our team is dedicated to providing you with the information and support you need.
               </p>
