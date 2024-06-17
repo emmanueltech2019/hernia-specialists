@@ -21,9 +21,11 @@ function NavBar() {
                         <Image src={logoImg} alt="alt"/>
                     </Link>
                     </div>
-                    <div className="toggle/user">
-                        <div className="seach">
-
+                    <div className="toggle/user flex items-center gap-6">
+                        <div className="search cursor-pointer">
+                        <Link href="/search">
+                        <Icon icon="ant-design:search-outlined" className='text-[30px] text-[#fff]'></Icon>
+                        </Link>
                         </div>
                         <div className='bg-[#fff] flex items-center shadow-sm shadow-[#08080847] p-1 rounded-full gap-1'>
                             <div className='toggle'>
@@ -49,7 +51,9 @@ function NavBar() {
                         <Link href="/faq">
                         <li className='rounded-full p-2 hover:border border-[#000000] cursor-pointer'>FAQ</li>
                         </Link>
+                        <Link href="/contact">
                         <li className='rounded-full p-2 hover:border border-[#000000] cursor-pointer'>Contact Us</li>
+                        </Link>
                         {/* <li className='rounded-full p-2 border border-[#000000] cursor-pointer'>Log out</li> */}
                     </ul>
                 </nav>
