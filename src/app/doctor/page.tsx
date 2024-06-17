@@ -7,6 +7,7 @@ import inguinalImg from '../components/assets/images/image 3.png'
 import hiatalImg from '../components/assets/images/image 4.png'
 import umblicalImg from '../components/assets/images/Bronx Hernia Specialists _ Hernia Surgery - Opera 5_15_2023 4_38_28 PM 1 (1).png'
 import specialtyImg from '../components/assets/images/Does Every Umbilical Hernia Corrects Itself_ Know here https___goo_gl_jGw3rE 1.png'
+import data from "../data";
 
 
 const page: React.FC = () => {
@@ -42,7 +43,7 @@ const page: React.FC = () => {
                 </div>
               </div>
               <div className="location">
-                <p className="text-[8px] md:text-[12px] font-bold">Austin, TX</p>
+                <p className="text-[8px] md:text-[12px] font-bold">{data.city}, {data.state}</p>
               </div>
             </div>
           </header>

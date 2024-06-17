@@ -9,6 +9,7 @@ import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import data from './data';
 export default function Home() {
   return (
     <div>
@@ -18,12 +19,12 @@ export default function Home() {
             <header className='mt-[6.5rem]'>
               <h1 className='md:w-[85%] text-[37px] md:text-[60px] font-bold text-[#fff] leading-10 md:leading-[16mm]'>
                 Find your <br className='md:hidden' />
-                Hernia<br className='hidden md:block' />Specialists in Austin, TX.
+                Hernia<br className='hidden md:block' />Specialists in {data.city}, {data.state}
               </h1>
 
               <p className='text-[#f4f4f4] md:text-[18px] md:w-[40%] my-[1.4rem]'>
                 your trusted destination for
-                premier hernia care in Austin
+                premier hernia care in {data.city}
                 and Surrounding Areas.
               </p>
             </header>
@@ -237,7 +238,7 @@ export default function Home() {
         <div className='md:max-w-[85%] m-auto p-4 py-[6rem]'>
           <header>
             <h2 className='text-[#449DD1] text-[20px] md:text-[30px] font-extrabold text-center w-[50%] md:w-[30%] m-auto my-[2rem]'>
-              BRONX HERNIA SPECIALISTS
+            {data.city} HERNIA SPECIALISTS
             </h2>
           </header>
 
