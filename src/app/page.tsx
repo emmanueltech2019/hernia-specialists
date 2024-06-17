@@ -10,6 +10,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import data from './data';
+import Link from 'next/link';
 export default function Home() {
   return (
     <div>
@@ -30,12 +31,16 @@ export default function Home() {
             </header>
 
             <div className="buttons flex justify-between gap-3 text-center mt-[6rem] md:w-[40%]">
-              <div className="about-us bg-[#fff] p-2 py-3 font-bold rounded-full w-full">
-                <button>About Us</button>
-              </div>
-              <div className="contact-us bg-[#449DD1] text-[#fff] p-2 py-3 font-bold rounded-full w-full">
-                <button>Contact Us</button>
-              </div>
+              <Link href={'/about'} >
+                <div className="about-us bg-[#fff] p-2 py-3 font-bold rounded-full w-full">
+                  <button>About Us</button>
+                </div>
+              </Link>
+              <Link href={'/contact'} >
+                <div className="contact-us bg-[#449DD1] text-[#fff] p-2 py-3 font-bold rounded-full w-full">
+                  <button>Contact Us</button>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
