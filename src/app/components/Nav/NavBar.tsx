@@ -4,7 +4,11 @@ import Image from 'next/image'
 import { Icon } from '@iconify/react';
 import logoImg from './img/logo 1.png'
 import Link from 'next/link';
+<<<<<<< HEAD
 import SearchModal from './components/SearchModal';
+=======
+import data from '@/app/data';
+>>>>>>> 0ca2f10ae9d01147a46beb3f14d2130c71954d02
 
 const NavBar: React.FC= () => {
     const [toggle, setToggle] = useState(false)
@@ -17,6 +21,7 @@ const NavBar: React.FC= () => {
     function handleToggle() {
         setToggle(!toggle)
     }
+<<<<<<< HEAD
     return (
         <div>
             <section className='absolute w-full z-50'>
@@ -26,6 +31,23 @@ const NavBar: React.FC= () => {
                             <Link href="/" >
                                 <Image src={logoImg} alt="alt" />
                             </Link>
+=======
+  return (
+    <div>
+        <section className='absolute w-full z-50'>
+            <div className="md:w-[85%] m-auto p-4 overflow-hidden">
+                <header className='flex justify-between items-center'>
+                    <div className="logo">
+                    <Link href="/" >
+                        <Image src={data.logo} width={'100'} height={'100'} alt="alt"/>
+                    </Link>
+                    </div>
+                    <div className="toggle/user flex items-center gap-6">
+                        <div className="search cursor-pointer">
+                        <Link href="/search">
+                        <Icon icon="ant-design:search-outlined" className='text-[30px] text-[#fff]'></Icon>
+                        </Link>
+>>>>>>> 0ca2f10ae9d01147a46beb3f14d2130c71954d02
                         </div>
                         <div className="toggle/user flex items-center gap-6">
                             <div className="search cursor-pointer">
