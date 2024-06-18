@@ -19,7 +19,7 @@ function NavBar() {
                 <header className='flex justify-between items-center'>
                     <div className="logo">
                     <Link href="/" >
-                        <Image src={data.logo} alt="alt"/>
+                        <Image src={data.logo} width={'100'} height={'100'} alt="alt"/>
                     </Link>
                     </div>
                     <div className="toggle/user flex items-center gap-6">

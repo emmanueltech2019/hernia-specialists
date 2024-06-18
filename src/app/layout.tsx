@@ -4,6 +4,19 @@ import "./globals.css";
 import NavBar from "./components/Nav/NavBar";
 import Footer from "./components/Footer/Footer";
 import data from "./data";
+import Script from "next/script";
+
+const TawkTo = () => {
+  return (
+    <>
+      <Script
+        strategy="lazyOnload"
+        src="https://embed.tawk.to/6670d9c09a809f19fb3ec8fa/1i0kd56cd"
+      />
+      {/* Rest of your website content */}
+    </>
+  );
+};
 
 const inter = Montserrat({ subsets: ["latin"],
   weight: ["100","300","400","500","600","700","800","900"]
@@ -30,6 +43,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavBar/>
         {children}
+        <TawkTo/>
         <Footer/>
       </body>
     </html>
