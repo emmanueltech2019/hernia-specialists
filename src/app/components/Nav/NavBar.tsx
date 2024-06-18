@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Icon } from '@iconify/react';
 import logoImg from './img/logo 1.png'
 import Link from 'next/link';
+import data from '@/app/data';
 
 function NavBar() {
     const [toggle, setToggle] = useState(false)
@@ -18,7 +19,7 @@ function NavBar() {
                 <header className='flex justify-between items-center'>
                     <div className="logo">
                     <Link href="/" >
-                        <Image src={logoImg} alt="alt"/>
+                        <Image src={data.logo} alt="alt"/>
                     </Link>
                     </div>
                     <div className="toggle/user flex items-center gap-6">
