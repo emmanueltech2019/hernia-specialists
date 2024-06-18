@@ -31,16 +31,16 @@ export default function Home() {
             </header>
 
             <div className="buttons flex justify-between gap-3 text-center mt-[6rem] md:w-[40%]">
-              <Link href={'/about'} >
                 <div className="about-us bg-[#fff] p-2 py-3 font-bold rounded-full w-full">
+              <Link href={'/about'} >
                   <button>About Us</button>
-                </div>
               </Link>
-              <Link href={'/contact'} >
+                </div>
                 <div className="contact-us bg-[#449DD1] text-[#fff] p-2 py-3 font-bold rounded-full w-full">
+              <Link href={'/contact'} >
                   <button>Contact Us</button>
-                </div>
               </Link>
+                </div>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function Home() {
           <div className="step mt-[10rem] mb-[3rem] md:mb-[7rem]">
             <header className='my-[4rem]'>
               <h2 className='text-[#449DD1] text-[20px] md:text-[30px] md:w-[40%] m-auto font-extrabold text-center'>
-                Take the first step towards a pain-free life.
+                Your Journey to Hernia Relief starts here.
               </h2>
             </header>
 
@@ -76,30 +76,36 @@ export default function Home() {
                 <div className="location-icon mb-[2rem]">
                   <Icon icon="humbleicons:location" className='text-[80px] m-auto w-full'></Icon>
                 </div>
-                <p className='font-bold text-[18px]'>
-                  Choose a location that is convenient
-                  for you, ensure you attend consultations and follow-up
-                  appointments
+                <h6 className='font-bold text-[18px]'>
+                  Choose a location 
+                </h6>
+                <p className='font-thin text-[16px]'>
+                  Choose your location in {data.city} and surrounding areas.
                 </p>
               </div>
               <div className="scheduling text-center px-[2.2rem]">
                 <div className="location-icon mb-[2rem]">
                   <Icon icon="arcticons:calendar-simple-19" className='text-[80px] m-auto w-full'></Icon>
                 </div>
-                <p className='font-bold text-[18px]'>
-                  Scheduling your procedure at a time
-                  that suits you eunsures you can plan
-                  your recovery period effectively
+                <h6 className='font-bold text-[18px]'>
+                  Connect with your doctor instantly.
+                </h6>
+                <p className='font-thin text-[16px]'>
+                  Schedule and appointment with your hernia specialists.  
                 </p>
+              
               </div>
               <div className="finding text-center px-[2.2rem]">
                 <div className="location-icon mb-[2rem]">
                   <Icon icon="uil:stethoscope-alt" className='text-[80px] m-auto w-full'></Icon>
                 </div>
-                <p className='font-bold text-[18px]'>
-                  Finding the right specialist is
-                  crucial for successful hernia treatment
+                <h6 className='font-bold text-[18px]'>
+                  Find your expert hernia surgeon.
+                </h6>
+                <p className='font-thin text-[16px]'>
+                  We have a the best expert in hernia surgery in {data.city}
                 </p>
+              
               </div>
             </div>
           </div>
@@ -116,6 +122,7 @@ export default function Home() {
 
           <div className='md:flex justify-center gap-[4rem]'>
             <div className="relative md:w-[70%] hernia-list bg-[#fff] p-8 ps-[4rem] m-4 rounded-lg">
+            <h6 className='text-[25px] font-extrabold py-3'>Top types of Hernias</h6>
               <div className="absolute left-0 bg-[#449DD1] w-[40px] h-[30px]">
 
               </div>
@@ -222,10 +229,21 @@ export default function Home() {
             </div>
 
             <div className="inguinal md:flex flex-row-reverse gap-4">
-              <div>
+              {/* <div>
                 <Image src={umblicalImg} alt="alt" />
-              </div>
-
+              </div> */}
+          <div className="md:m-auto">
+                    <div className="md:pr-8 rounded-lg">
+                      <iframe
+                        className="md:h-[320px] md:w-[590px] w-screen h-[50vh]"
+                        src="https://www.youtube.com/embed/Oxar0r6-HEU"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
               <div className="text md:w-[50%]">
                 <h2 className='my-4 font-bold text-[20px]'>Umbilical Hernia</h2>
                 <p className='font-[500] text-[#000000a4]'>

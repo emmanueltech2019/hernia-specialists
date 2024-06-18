@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/hero/Hero'
 // import data from '../data'
 import Link from 'next/link'
+import data from '../data'
 
 function page() {
     return (
@@ -24,13 +25,13 @@ function page() {
                                 <div className="email">
                                     <p className='text-[11px] leading-[25px]'>Email:</p>
                                     <Link href="#">
-                                        <p>xhs@gmail.com</p>
+                                        <p>info@{data.domain}</p>
                                     </Link>
                                 </div>
                                 <div className="phone">
                                     <p className='text-[11px] leading-[25px]'>Phone:</p>
                                     <Link href="#">
-                                        <p className='text-[18px]'>09422478</p>
+                                        <p className='text-[18px]'>+0000000000000</p>
                                     </Link>
                                 </div>
                             </div>

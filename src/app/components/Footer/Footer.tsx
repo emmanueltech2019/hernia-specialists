@@ -1,4 +1,6 @@
 // components/Footer.tsx
+import data from '@/app/data';
+import Link from 'next/link';
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -16,9 +18,11 @@ const Footer: React.FC = () => {
               <p className="mb-6">
                 Our team is dedicated to providing you with the information and support you need.
               </p>
+              <Link href={`mailto:info@${data.domain}`}>
               <button className="border-solid border-white border-2 text-white px-4 py-2 rounded-full ">
                 Send Email
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -29,7 +33,7 @@ const Footer: React.FC = () => {
               <strong>Disclaimer:</strong> We are a medical marketing entity. We are not considered a medical practice, institution or hospital. Please know that email communication via our website may not be done through a secure platform. Although it is unlikely, there is a possibility that information you include in your submission can be intercepted and read by parties other than the intended recipient. To protect your confidential information, please do not include personal identifying information such as your birth date or personal medical information in any emails or website submissions you send to us.
             </p>
             <div className='md:flex  justify-between text-center md:text-left'>
-            <p className="text-sm mt-4">© 2024 XHS All rights reserved.</p>
+            <p className="text-sm mt-4">© 2024 {data.brand} All rights reserved.</p>
             <div className="flex justify-around md:justify-between space-x-4 mt-2">
               <a href="#" className="text-sm">| Privacy Policy</a>
               {/* <span>|</span> */}

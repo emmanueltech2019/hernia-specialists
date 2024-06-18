@@ -2,7 +2,8 @@ import React from 'react'
 import Hero from '../components/hero/Hero'
 import SurgImg from "../components/assets/images/who-are-we.png"
 import Image from 'next/image'
-import offerImg from '../components/assets/images/image.png'
+import offerImg from '../components/assets/images/img-1.png'
+import offerImg2 from '../components/assets/images/img-2.png'
 import data from '../data'
 
 function page() {
@@ -52,7 +53,7 @@ function page() {
             </div>
           </div>
           <div className=' shadow-xl rounded-xl md:flex bg-white '>
-            <Image src={offerImg} alt='' className='md:w-[331px] h-[301px] rounded-xl ' />
+            <Image src={offerImg2} alt='' className='md:w-[331px] h-[301px] rounded-xl ' />
             <div className='text-[13px] md:text-[12px] p-3'>
               <ul className="list-disc ps-8 flex flex-col gap-3">
                 <li>
