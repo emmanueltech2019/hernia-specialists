@@ -40,10 +40,10 @@ function Page() {
               <Image src={docImg} className="rounded-full w-full h-full" alt="alt" />
             </div>
 
-            <div className="doc-stat ">
+            <div className="doc-stat flex flex-col gap-[1rem]">
               <header className="leading-[6mm] md:leading-[10mm]">
                 <h1 className="text-[#449DD1] font-bold text-[20px] md:text-[30px]">Vinnet Choudry, MD</h1>
-                <p className="font-[500] flex items-center gap-2 md:text-[20px]">Surgeon <Icon icon="ph:seal-check-fill" className="text-[#379c4a]"></Icon></p>
+                <p className="font-[500] flex items-center gap-2 md:text-[20px]">Surgeon</p>
               </header>
               <div className="rating">
                 <small className="text-[8px] md:text-[12px] font-bold">Rating 5.3</small>
@@ -56,12 +56,18 @@ function Page() {
                 </div>
               </div>
               <div className="location">
-                <p className="text-[8px] md:text-[12px] font-bold">{data.city}, {data.state}</p>
+                <p className="text-[8px] md:text-[14px] font-bold ">{data.city}, {data.state}</p>
+              </div>
+
+              <div className="flex gap-[2rem]">
+                <p className="flex items-center gap-2 md:text-[18px]">Certified <Icon icon="ph:seal-check-fill" className="text-[#379c4a]"></Icon></p>
+                <p className="flex items-center gap-2 md:text-[18px]">Accepting new patients <Icon icon="mdi:briefcase" className="text-[#747272]"></Icon></p>
               </div>
             </div>
           </header>
 
-          <div className="info md:flex gap-8 justify-between md:mt-[7rem] md:w-[80%] m-auto">
+          <div className="info gap-8 justify-between md:mt-[7rem] md:w-[80%] m-auto">
+            <h1 className="text-[#449DD1] font-bold text-[20px] md:text-[30px]">About Dr. Choudhry</h1>
             <p className="text-[15px] font-[500] leading-[8mm] md:w-[80%]">
               Vineet Choudhry was born near Chicago and has lived in various places growing up such as Kansas City and San Francisco. However, he moved to Ft. Worth, Texas in 1984 and now considers himself a native Texan.
 
@@ -171,56 +177,56 @@ function Page() {
             <div className="relative overflow-hidden rounded-lg">
               <Image src={specialtyImg} className="h-[170px] rounded-lg" alt="alt" />
               <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[5%] ">
-                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+              <Icon icon="material-symbols:health-metrics" className="text-[40px] text-[#fff]"></Icon>
                 <h2 className="text-[20px] text-[#fff] font-[500]">Hernia</h2>
               </div>
             </div>
             <div className="relative overflow-hidden rounded-lg">
               <Image src={gallbladderImg} className="h-[170px] rounded-lg" alt="alt" />
               <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
-                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+              <Icon icon="material-symbols:health-metrics" className="text-[40px] text-[#fff]"></Icon>
                 <h2 className="text-[20px] text-[#fff] font-[500]">Gallbladder</h2>
               </div>
             </div>
             <div className="relative overflow-hidden rounded-lg">
               <Image src={daVinciImg} className="h-[170px] rounded-lg" alt="alt" />
               <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
-                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+              <Icon icon="material-symbols:health-metrics" className="text-[40px] text-[#fff]"></Icon>
                 <h2 className="text-[20px] text-[#fff] text-center font-[500]">Da Vinci Robotic Surgery</h2>
               </div>
             </div>
             <div className="relative overflow-hidden rounded-lg">
               <Image src={breastImg} className="h-[170px] rounded-lg" alt="alt" />
               <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
-                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+              <Icon icon="material-symbols:health-metrics" className="text-[40px] text-[#fff]"></Icon>
                 <h2 className="text-[20px] text-[#fff] font-[500]">Breast Cancer</h2>
               </div>
             </div>
             <div className="relative overflow-hidden rounded-lg">
               <Image src={smallImg} className="h-[170px] rounded-lg" alt="alt" />
               <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
-                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+              <Icon icon="material-symbols:health-metrics"></Icon>
                 <h2 className="text-[20px] text-[#fff] font-[500]">Small intestine</h2>
               </div>
             </div>
             <div className="relative overflow-hidden rounded-lg">
               <Image src={mastectomyImg} className="h-[170px] rounded-lg" alt="alt" />
-              <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
-                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+              <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">  
+                <Icon icon="material-symbols:health-metrics"  className="text-[40px] text-[#fff]"></Icon>
                 <h2 className="text-[20px] text-[#fff] font-[500]">Mastecomy</h2>
               </div>
             </div>
             <div className="relative overflow-hidden rounded-lg">
               <Image src={colonImg} className="h-[170px] rounded-lg" alt="alt" />
               <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
-                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+              <Icon icon="material-symbols:health-metrics" className="text-[40px] text-[#fff]"></Icon>
                 <h2 className="text-[20px] text-[#fff] font-[500]">Colon Surgery</h2>
               </div>
             </div>
             <div className="relative overflow-hidden rounded-lg">
               <Image src={endoscopyImg} className="h-[170px] rounded-lg" alt="alt" />
               <div className="absolute h-full w-full flex flex-col items-center justify-center -bottom-[0%] bg-[#0000006f]">
-                <Icon icon="icons8:plus" className="text-[40px] text-[#fff]"></Icon>
+              <Icon icon="material-symbols:health-metrics" className="text-[40px] text-[#fff]"></Icon>
                 <h2 className="text-[20px] text-[#fff] font-[500]">Endoscopy</h2>
               </div>
             </div>
