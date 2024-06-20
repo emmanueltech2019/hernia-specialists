@@ -5,6 +5,8 @@ import Link from 'next/link'
 import data from '../data'
 
 function page() {
+    const src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96573.51215796186!2d-73.92333479996579!3d40.85163068356635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28b553a697cb1%3A0x556e43a78ff15c77!2sBronx%2C%20NY%2C%20USA!5e0!3m2!1sen!2sng!4v1718807214634!5m2!1sen!2sng";
+
     return (
         <div>
             <Hero title={'Contact Us'} description={`Reach Out to our team for expert care, Support, and personalized solutions for your Hernia Surgery needs.`} />
@@ -21,21 +23,33 @@ function page() {
                                 If you have any questions, require further assistance or want to book an appointment give us a call or send us a message.
                             </p>
 
-                            <div className='flex justify-between my-[2rem]'>
+                            <div className='md:flex justify-between my-[2rem]'>
                                 <div className="email">
-                                    <p className='text-[11px] leading-[25px]'>Email:</p>
+                                    <p className='text-[14px] leading-[25px]'>Email:</p>
                                     <Link href="#">
                                         <p>info@{data.domain}</p>
                                     </Link>
                                 </div>
                                 <div className="phone">
-                                    <p className='text-[11px] leading-[25px]'>Phone:</p>
+                                    <p className='text-[14px] leading-[25px]'>Phone:</p>
                                     <Link href="#">
-                                        <p className='text-[18px]'>+0000000000000</p>
+                                        <p className='text-[18px]'>+00000000000</p>
                                     </Link>
                                 </div>
                             </div>
-                        </div>
+                            <div className='mr-10'>
+                                <iframe
+                                    src={src}
+                                    width="400"
+                                    height="450"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Google Maps Bronx, NY" // Add a descriptive title for accessibility
+                                    />
+                                </div>
+                            </div>
 
                         <div className="form my-[3rem] sm:w-[50%]">
                             <form className='grid gap-[2rem]'>

@@ -12,6 +12,10 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import data from './data';
 import Link from 'next/link';
 export default function Home() {
+  const embedSrc = "https://sketchfab.com/models/48ee970a23964b59b9c85d06fff540f6/embed";
+  const modelUrl = "https://sketchfab.com/3d-models/rt-inguinal-hernia-containing-the-bladder-48ee970a23964b59b9c85d06fff540f6?utm_medium=embed&utm_campaign=share-popup&utm_content=48ee970a23964b59b9c85d06fff540f6";
+  const authorUrl = "https://sketchfab.com/tl0615?utm_medium=embed&utm_campaign=share-popup&utm_content=48ee970a23964b59b9c85d06fff540f6";
+
   return (
     <div>
       <section className="hero bg-[#00000058] bg-blend-overlay">
@@ -24,7 +28,7 @@ export default function Home() {
               </h1>
 
               <p className='text-[#f4f4f4] md:text-[18px] md:w-[40%] my-[1.4rem]'>
-                your trusted destination for
+                Your trusted destination for
                 premier hernia care in {data.city} 
                 {''} and Surrounding Areas.
               </p>
@@ -116,13 +120,14 @@ export default function Home() {
         <div className='md:max-w-[85%] m-auto py-8 pb-[6rem]'>
           <header className='py-[3rem]'>
             <h2 className='text-[#449DD1] text-[20px] md:text-[30px] font-extrabold text-center'>
-              How Risky Is A Hernia
+              {/* How Risky Is A Hernia */}
+              WHAT IS AN HERNIA?
             </h2>
           </header>
 
           <div className='md:flex justify-center gap-[4rem]'>
             <div className="relative md:w-[70%] hernia-list bg-[#fff] p-8 ps-[4rem] m-4 rounded-lg">
-            <h6 className='text-[25px] font-extrabold py-3'>Top types of Hernias</h6>
+            <h6 className='text-[25px] font-extrabold py-5'>Top types of Hernias</h6>
               <div className="absolute left-0 bg-[#449DD1] w-[40px] h-[30px]">
 
               </div>
@@ -142,14 +147,26 @@ export default function Home() {
 
             <div className='mt-[1rem]'>
               <div className="img h-[180px] md:h-[300px] overflow-hidden ">
-                <Image src={img1} className=' object-cover h-full w-full scale-[180%] md:scale-[100%]' alt="hernia" />
+                 <iframe
+                        className="md:h-[320px] md:w-[590px] w-screen h-[50vh]"
+                        src="https://www.youtube.com/embed/Oxar0r6-HEU"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                {/* <Image src={img1} className=' object-cover h-full w-full scale-[180%] md:scale-[100%]' alt="hernia" /> */}
               </div>
 
               <div className="text p-4 font-[500] md:w-[80%]">
+                <h1 className='font-bold text-[18px]'>Condition</h1>
                 <p>
                   An incarcerated hernia can cut off blood flow to part of your intestine. Strangulation can lead to the death of the affected bowel tissue. A strangulated hernia is life-threatening and requires immediate surgery.
                   <br />
                   <br />
+                  </p>
+                  <h1 className='font-bold text-[18px]'>Symptoms</h1>
+                  <p>
                   Symptoms of a strangulated hernia can include severe pain, nausea, vomiting, and fever. In some cases, a hernia can be gently pushed back into place, but a strangulated hernia requires surgery to repair.
                 </p>
               </div>
@@ -195,19 +212,41 @@ export default function Home() {
         <div className='md:max-w-[85%] m-auto p-4'>
           <header className='py-[3rem]'>
             <h2 className='text-[#449DD1] text-[20px] md:text-[30px] font-extrabold text-center md:w-[40%] m-auto'>
-              Do You Need A Hernia Specialist?
+              Do You Need a Hernia Specialist?
             </h2>
           </header>
 
           <div className="hernias">
             <div className="inguinal md:flex flex-row-reverse gap-4">
               <div>
-                <Image src={inguinalImg} alt="alt" />
+                {/* <Image src={inguinalImg} alt="alt" /> */}
+                <div className="sketchfab-embed-wrapper w-[500px]">
+      <iframe 
+        title="Inguinal hernia"
+        src={embedSrc}
+        frameBorder="0"
+        allowFullScreen
+        allow="autoplay; fullscreen; xr-spatial-tracking"
+        xrSpatialTracking
+        executionWhileOutOfViewport
+        executionWhileNotRendered
+        webShare
+        className='w-[500px] h-[300px]'
+      />
+      {/* <p style={{ fontSize: '13px', fontWeight: 'normal', margin: '5px', color: '#4A4A4A' }}>
+        <a href={modelUrl} target="_blank" rel="nofollow" style={{ fontWeight: 'bold', color: '#1CAAD9' }}>
+          RT inguinal hernia containing the bladder
+        </a> by <a href={authorUrl} target="_blank" rel="nofollow" style={{ fontWeight: 'bold', color: '#1CAAD9' }}>tl0615</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=48ee970a23964b59b9c85d06fff540f6" target="_blank" rel="nofollow" style={{ fontWeight: 'bold', color: '#1CAAD9' }}>Sketchfab</a>
+      </p> */}
+    </div>
               </div>
 
               <div className="text md:w-[50%]">
                 <h2 className='my-4 font-bold text-[20px]'>Inguinal Hernia</h2>
                 <p className='font-[500] text-[#000000a4]'>
+                  Inguinal hernias are the most common type of hernia encountered. They occur in women but occur more commonly in males. About 1 in 4 males will have an inguinal hernia at some point in their lifetime. The testicle descending from the abdomen into the scrotum predisposes males to have a natural weakness in the groin where inguinal hernias occur.
+                </p>
+                <p className='font-[500] text-[#000000a4] py-2'>
                   Inguinal hernias are the most common type of hernia encountered. They occur in women but occur more commonly in males. About 1 in 4 males will have an inguinal hernia at some point in their lifetime. The testicle descending from the abdomen into the scrotum predisposes males to have a natural weakness in the groin where inguinal hernias occur.
                 </p>
               </div>
@@ -216,12 +255,17 @@ export default function Home() {
 
             <div className="inguinal my-[4rem] md:flex gap-4">
               <div >
-                <Image src={hiatalImg} alt="alt" />
+              <iframe src="https://human.biodigital.com/view?id=production/maleAdult/hiatal_hernia&lang=en&ref=share" width="500" height="400" frameBorder="0"></iframe>
+
+                {/* <Image src={hiatalImg} alt="alt" /> */}
               </div>
 
               <div className="text md:w-[50%]">
                 <h2 className='my-4 font-bold text-[20px]'>Hiatal Hernia</h2>
                 <p className='font-[500] text-[#000000a4]'>
+                  Hiatal hernias typically occur later in life and cause a myriad of symptoms. Symptoms may include heartburn, nausea, vomiting, regurgitation, abdominal pain, chest pain, difficulty swallowing, bloating, belching, or coughing. The term hiatal comes from hiatus (or opening), specifically the esophageal hiatus.
+                </p>
+                <p className='font-[500] text-[#000000a4] py-2'>
                   Hiatal hernias typically occur later in life and cause a myriad of symptoms. Symptoms may include heartburn, nausea, vomiting, regurgitation, abdominal pain, chest pain, difficulty swallowing, bloating, belching, or coughing. The term hiatal comes from hiatus (or opening), specifically the esophageal hiatus.
                 </p>
               </div>
@@ -234,14 +278,16 @@ export default function Home() {
               </div> */}
           <div className="md:m-auto">
                     <div className="md:pr-8 rounded-lg">
-                      <iframe
+                      {/* <iframe
                         className="md:h-[320px] md:w-[590px] w-screen h-[50vh]"
                         src="https://www.youtube.com/embed/Oxar0r6-HEU"
                         title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
-                      ></iframe>
+                      ></iframe> */}
+                                    <iframe src="https://human.biodigital.com/view?id=production/maleAdult/umbilical_ventral_hernia&lang=en&ref=share" width="500" height="400" frameBorder="0"></iframe>
+
                     </div>
                   </div>
               <div className="text md:w-[50%]">
@@ -279,7 +325,7 @@ export default function Home() {
             </div>
             <div className='p-7 shadow-xl rounded-xl'>
               <h2 className='text-[#449DD1] text-[20px] md:text-[30px] font-extrabold  md:w-[80%] my-4'>
-              How Long Does A Hernia Operation Take?
+              How Long Does a Hernia Operation Take?
               </h2>
               <p className='text-[13px] md:text-[16px]'>
               The operation usually takes about 30 to 45 minutes to complete and you&apos;ll usually be able to go home on the same day. Some people stay in hospital overnight if they have other medical problems or live on their own.
