@@ -18,6 +18,15 @@ const NavBar: React.FC= () => {
     function handleToggle() {
         setToggle(!toggle)
     }
+    // return (
+    //     <div>
+    //         <section className='absolute w-full z-50'>
+    //             <div className="md:w-[85%] m-auto p-4 overflow-hidden">
+    //                 <header className='flex justify-between items-center'>
+    //                     <div className="logo">
+    //                         <Link href="/" >
+    //                             <Image src={logoImg} alt="alt" />
+    //                         </Link>
   return (
     <div>
         <section className='absolute w-full z-50'>

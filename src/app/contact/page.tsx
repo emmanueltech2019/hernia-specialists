@@ -13,12 +13,13 @@ function page() {
 
             <section className='p-4'>
                 <div className='md:max-w-[85%] m-auto'>
-                    <header className='text-[#449DD1] text-[20px] md:text-[30px] md:w-[40%] m-auto font-extrabold text-center my-[1.5rem]'>
-                        <h1>Get in Touch</h1>
-                    </header>
 
-                    <div className='sm:flex justify-between items-baseline'>
+
+                    <div className='sm:flex justify-between gap-[7rem] items-baseline'>
                         <div className='sm:w-[40%]'>
+                            <header className='text-[#449DD1] text-[20px] md:text-[30px] md:w-[40%] font-extrabold my-[1.5rem]'>
+                                <h1>Get in Touch</h1>
+                            </header>
                             <p className='text-[14px] leading-[25px] font-[400]'>
                                 If you have any questions, require further assistance or want to book an appointment give us a call or send us a message.
                             </p>
@@ -27,7 +28,7 @@ function page() {
                                 <div className="email">
                                     <p className='text-[14px] leading-[25px]'>Email:</p>
                                     <Link href="#">
-                                        <p>info@{data.domain}</p>
+                                        <p className='md:w-[30%]'>info@{data.domain}</p>
                                     </Link>
                                 </div>
                                 <div className="phone">
@@ -47,24 +48,27 @@ function page() {
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
                                     title="Google Maps Bronx, NY" // Add a descriptive title for accessibility
-                                    />
-                                </div>
+                                />
                             </div>
+                        </div>
 
                         <div className="form my-[3rem] sm:w-[50%]">
-                            <form className='grid gap-[2rem]'>
+                            <header className='text-[#449DD1] text-[20px] md:text-[30px] m-auto font-extrabold my-[1.5rem]'>
+                                <h1>Email us</h1>
+                            </header>
+                            <form className='grid gap-[2rem] p-[6rem] shadow-2xl rounded-[2rem]'>
                                 <div>
-                                    <label className="text-[13.5px]" htmlFor="name">Name:</label><br/>
-                                    <input type="text" id='name' placeholder='Micheal Collin' className='outline-none border-[1px] border-[#0000006d] bg-transparent p-[1rem] w-full rounded-full'/>
+                                    <label className="text-[13.5px]" htmlFor="name">Name:</label><br />
+                                    <input type="text" id='name' placeholder='Micheal Collin' className='outline-none border-[1px] border-[#0000006d] bg-transparent p-[1rem] w-full rounded-full' />
                                 </div>
 
                                 <div>
-                                    <label className="text-[13.5px]" htmlFor="email">Email:</label><br/>
-                                    <input type="email" id='email' placeholder='micheal67@gmail.com' className='outline-none border-[1px] border-[#0000006d] bg-transparent p-[1rem] w-full rounded-full'/>
+                                    <label className="text-[13.5px]" htmlFor="email">Email:</label><br />
+                                    <input type="email" id='email' placeholder='micheal67@gmail.com' className='outline-none border-[1px] border-[#0000006d] bg-transparent p-[1rem] w-full rounded-full' />
                                 </div>
 
                                 <div>
-                                    <label className="text-[13.5px]" htmlFor="message">Message:</label><br/>
+                                    <label className="text-[13.5px]" htmlFor="message">Message:</label><br />
                                     <textarea name="comment" id="message" placeholder='Leave us a Message...' className='outline-none border-[1px] border-[#0000006d] bg-transparent p-[2rem] w-full rounded-full'></textarea>
                                 </div>
 
