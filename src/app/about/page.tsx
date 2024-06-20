@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/hero/Hero'
-import SurgImg from "../components/assets/images/who-are-we.png"
+import SurgImg from "../components/assets/images/who-are-we.jpg"
 import Image from 'next/image'
 import offerImg from '../components/assets/images/img-1.png'
 import offerImg2 from '../components/assets/images/img-2.png'
@@ -19,7 +19,7 @@ function page() {
         </div> */}
       <div className="md:max-w-[85%] m-auto inguinal my-[4rem] md:px-32 px-5 md:flex gap-10 text-left">
         <div >
-          <Image src={SurgImg} alt="alt" className='rounded-xl h-[100%]' />
+          <Image src={SurgImg} alt="alt" className='rounded-xl h-[300px] w-[500px]' />
         </div>
 
         <div className="text-left md:w-[50%]">
