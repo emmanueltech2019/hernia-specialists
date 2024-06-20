@@ -224,13 +224,8 @@ export default function Home() {
       <iframe 
         title="Inguinal hernia"
         src={embedSrc}
-        frameBorder="0"
         allowFullScreen
         allow="autoplay; fullscreen; xr-spatial-tracking"
-        xrSpatialTracking
-        executionWhileOutOfViewport
-        executionWhileNotRendered
-        webShare
         className='w-[500px] h-[300px]'
       />
       {/* <p style={{ fontSize: '13px', fontWeight: 'normal', margin: '5px', color: '#4A4A4A' }}>
