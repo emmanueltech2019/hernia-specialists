@@ -1,14 +1,5 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-import Image from "next/image";
-import img1 from './components/assets/images/pexels-oles-kanebckuu-34911-127873 1.png'
-import inguinalImg from './components/assets/images/image 3.png'
-import hiatalImg from './components/assets/images/image 4.png'
-import umblicalImg from './components/assets/images/Bronx Hernia Specialists _ Hernia Surgery - Opera 5_15_2023 4_38_28 PM 1 (1).png'
-import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import data from './data';
 import Link from 'next/link';
 export default function Home() {
