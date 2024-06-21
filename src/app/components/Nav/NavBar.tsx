@@ -18,6 +18,11 @@ const NavBar: React.FC= () => {
     function handleToggle() {
         setToggle(!toggle)
     }
+    const handleNavigation =(page: string) => {
+        setToggle(false)
+        setModal(false)
+        window.location.href = page
+    }
   return (
     <div>
         <section className='absolute w-full z-50'>
@@ -61,13 +66,11 @@ const NavBar: React.FC= () => {
                     </div> */}
                         </div>
                         <ul className='text-center flex flex-col my-3 gap-3 w-[70%]'>
-                            <Link href="/about"><li className='rounded-full p-2 hover:border border-[#000000] cursor-pointer'>About Us</li></Link>
-                            <Link href="/faq">
-                                <li className='rounded-full p-2 hover:border border-[#000000] cursor-pointer'>FAQ</li>
-                            </Link>
-                            <Link href="/contact">
-                                <li className='rounded-full p-2 hover:border border-[#000000] cursor-pointer'>Contact Us</li>
-                            </Link>
+                            <li className='rounded-full p-2 hover:border border-[#000000] cursor-pointer' onClick={()=>handleNavigation("/about")}>About Us</li>
+                            <li className='rounded-full p-2 hover:border border-[#000000] cursor-pointer' onClick={()=>handleNavigation("/faq")}>FAQ</li>
+                          
+                            <li className='rounded-full p-2 hover:border border-[#000000] cursor-pointer' onClick={()=>handleNavigation("/contact")}>Contact Us</li>
+                           
                             {/* <li className='rounded-full p-2 border border-[#000000] cursor-pointer'>Log out</li> */}
                         </ul>
                     </nav>

@@ -304,9 +304,7 @@ export default function Home() {
             <h2 className='uppercase text-[#449DD1] text-[20px] md:text-[30px] font-extrabold text-center w-[50%] md:w-[30%] m-auto my-[2rem]'>
             {data.city} HERNIA SPECIALISTS
             </h2>
-            {/* <h2 className='text-[#449DD1] text-[20px] md:text-[30px] font-extrabold text-center w-[60%] md:w-[30%] m-auto my-[2rem]'>
-              BRONX HERNIA SPECIALISTS
-            </h2> */}
+
           </header>
 
           <div className="cards md:flex gap-7">

@@ -5,7 +5,7 @@ import Link from 'next/link'
 import data from '../data'
 
 function page() {
-    const src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96573.51215796186!2d-73.92333479996579!3d40.85163068356635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28b553a697cb1%3A0x556e43a78ff15c77!2sBronx%2C%20NY%2C%20USA!5e0!3m2!1sen!2sng!4v1718807214634!5m2!1sen!2sng";
+    const src = data.src
 
     return (
         <div>
@@ -17,7 +17,7 @@ function page() {
 
                     <div className='sm:flex justify-between gap-[7rem] items-baseline'>
                         <div className='sm:w-[40%]'>
-                            <header className='text-[#449DD1] text-[20px] md:text-[30px] md:w-[40%] font-extrabold my-[1.5rem]'>
+                            <header className='text-[#449DD1] text-[20px] md:text-[30px] md:w-[100%] font-extrabold my-[1.5rem]'>
                                 <h1>Get in Touch</h1>
                             </header>
                             <p className='text-[14px] leading-[25px] font-[400]'>
