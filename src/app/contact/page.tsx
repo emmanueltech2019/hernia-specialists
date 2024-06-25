@@ -18,7 +18,7 @@ const Toast = Swal.mixin({
     }
   });
 
-function page() {
+function Page() {
     const src = data.src
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -131,4 +131,4 @@ function page() {
     )
 }
 
-export default page
+export default Page
