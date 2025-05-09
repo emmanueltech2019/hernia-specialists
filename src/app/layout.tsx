@@ -41,23 +41,27 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <meta name="google-site-verification" content="Xg_f-kPWuWVCH8tNdSPToJJQ5b8EbTJnzapixZKvLB0" />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-N10EQRCT7B"></script>
+      <meta name="google-site-verification" content="qtF6bh1d2Fs5IN5P9-UIymEDB64u8AuQyVBbWI6dNB8" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYFS8C7VC0"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-N10EQRCT7B');
+              gtag('config', 'G-WYFS8C7VC0');
             `,
           }}
         />
       </head>
       <body className={inter.className}>
         <NavBar/>
+        <div className="overflow-x-hidden w-screen">
         {children}
+
+        </div>
         <TawkTo/>
+       
         <Footer/>
       </body>
     </html>
