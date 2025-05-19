@@ -33,6 +33,7 @@
     "sweetalert2": "^11.12.1",
     "swiper": "^11.1.4",
     "three": "^0.166.1"
+  
   },
   "devDependencies": {
     "@iconify/react": "^5.0.1",
